@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
       sleep(60);
     }//end for loop
     printf("\n***Sprint is up!  Time to take a break!***");
-    printf("\n***You have completed %d sprints this run.***\n", ++sprintsCompleted);
+    printf("\n***You have completed %d sprints this run.***\n\n", ++sprintsCompleted);
 
     //Time is up, so play the first alert
     system("aplay alert3.wav");
@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
       fflush(stdout);
       sleep(60);
     }//end for loop
-    printf("\n***One minute left in the rest period***\n");
+    printf("\n***One minute left in the rest period***\n\n");
     //give the audible one minute warning
     system("aplay alert2.wav");
 
@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
       fflush(stdout);
       sleep(60);
     }//end for loop
-    printf("\n***Rest period is over!  Start your next sprint!***\n");
+    printf("\n***Rest period is over!  Start your next sprint!***\n\n");
 
     //sound the start sprint alert
     system("aplay alert1.wav");
